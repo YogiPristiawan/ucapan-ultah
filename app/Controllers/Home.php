@@ -52,16 +52,16 @@ class Home extends BaseController
 				return $wish->table('wish')
 					->insert([
 						'created_at' => '?',
-						'content' => '?'
+						'wishes' => '?'
 					]);
 			});
 
 			$created_at = date('Y-m-d H:i:s', strtotime('now'));
-			$content = htmlspecialchars($this->request->getVar('content'));
+			$wishes = htmlspecialchars($this->request->getVar('content'));
 
 			$response = view('thanks');
 			echo json_encode($response);
-			return $pQuery->execute($created_at, $content);
+			return $pQuery->execute($created_at, $wishes);
 		}
 	}
 
