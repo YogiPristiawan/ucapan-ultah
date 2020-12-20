@@ -77,12 +77,6 @@ class Home extends BaseController
 			return json_encode($response);
 		}
 	}
-
-	public function make_wish()
-	{
-		if ($this->request->isAJAX()) {
-		}
-	}
 	//--------------------------------------------------------------------
 
 }

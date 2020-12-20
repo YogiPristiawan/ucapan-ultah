@@ -96,6 +96,7 @@ function thanks(){
         $.ajax({
             url: base_url+"home/thanks/",
             dataType: "JSON",
+            method: "POST",
             data: {content:value},
 
             beforeSend: function(){
