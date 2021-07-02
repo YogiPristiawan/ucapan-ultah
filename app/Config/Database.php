@@ -36,7 +36,7 @@ class Database extends \CodeIgniter\Database\Config
 		'hostname' => 'localhost',
 		'username' => 'root',
 		'password' => '',
-		'database' => '',
+		'database' => 'ultah',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,

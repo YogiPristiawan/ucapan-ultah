@@ -27,6 +27,24 @@
         border-radius: 18px;
     }
 
+    .heart {
+        animation: heart 1s linear infinite;
+    }
+
+    @keyframes heart {
+        0% {
+            color: #ff14cd;
+        }
+
+        50% {
+            font-size: 25%;
+        }
+
+        100% {
+            font-size: 100%;
+        }
+    }
+
     #alert {
         color: red;
         font-size: 12px;
@@ -75,7 +93,7 @@
         <div class="text-center">
             <small>
                 <small>
-                    <span>&#169;</span> 2020. created by <a href="https://twitter.com/yuugisans_">Yogi Pristiawan</a>
+                    <span>&#169;</span> 2020. created by <span class="heart" style="color: #ff80e4;">❤</span> <a href="https://www.instagram.com/yugisans_/" style="color: #ff80e4; font-weight: bold; font-style: italic"> Kage Nui <span class="small font-weight-light">(click me!)</span></a>
                 </small>
             </small>
         </div>

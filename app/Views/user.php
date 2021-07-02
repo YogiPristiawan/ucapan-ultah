@@ -2,17 +2,17 @@
 
 $value = strtolower($value);
 
-if ($value === "ica") : ?>
+if ($value === "yuri" || $value === 'yuritma putri' || $value === 'yuri') : ?>
     <div class="d-flex justify-content-center">
         <lottie-player src="<?= base_url(); ?>/public/animation/31548-robot-says-hello.json" background="transparent" speed="1" style="width: 170px;" loop autoplay></lottie-player>
     </div>
-    <h6 class="card-title mb-4">Haii Ica, hope you have a awesome day! <br><br>
+    <h6 class="card-title mb-4">Haii Yurii, hope you have a awesome day! <br><br>
         Dah langsung aja, sekarang umur nya berapa??</h6>
 <?php else : ?>
     <div class="d-flex justify-content-center mb-3 mt-2">
         <lottie-player src="<?= base_url(); ?>/public/animation/10111-meh.json" background="transparent" speed="1" style="width: 80px;" loop autoplay></lottie-player>
     </div>
-    <h6 class="card-title">Ahh bohong, kamu Ica kan?</h6>
+    <h6 class="card-title">Ahh bohong, kamu Yurii kan?</h6>
     <h6 class="card-title mb-4"> Dah langsung aja, sekarang umur nya berapa??</h6>
 <?php endif; ?>
 <p id="alert">eitss di isi dulu dong...</p>

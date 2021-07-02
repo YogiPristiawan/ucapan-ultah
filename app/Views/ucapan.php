@@ -7,7 +7,7 @@ for ($i = 1; $i <= $value; $i++) :
 
     <div class="mt-3 gift p-3">
         <div>
-            <h5 class="mb-0">Happy Birthday Ica!!</h5>
+            <h5 class="mb-0">Happy Birthday Yuriii!! :)</h5>
         </div>
         <div class="d-flex justify-content-center">
 

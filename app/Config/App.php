@@ -23,7 +23,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/hbd/';
+	public $baseURL = 'http://localhost/ucapan-ultah/';
 
 	/*
 	|--------------------------------------------------------------------------

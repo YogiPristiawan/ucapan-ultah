@@ -47,21 +47,25 @@ class Home extends BaseController
 		if ($this->request->isAJAX()) {
 
 			$wish = new wishModel();
+			try {
 
-			$pQuery = $wish->prepare(function ($wish) {
-				return $wish->table('wish')
-					->insert([
-						'created_at' => '?',
-						'wishes' => '?'
-					]);
-			});
+				$created_at = date('Y-m-d H:i:s', strtotime('now'));
+				$wishes = htmlspecialchars($this->request->getVar('content'));
 
-			$created_at = date('Y-m-d H:i:s', strtotime('now'));
-			$wishes = htmlspecialchars($this->request->getVar('content'));
+				$pQuery = $wish->prepare(function ($wish) {
+					return $wish->table('wish')
+						->insert([
+							'created_at' => '?',
+							'content' => '?'
+						]);
+				});
 
-			$response = view('thanks');
-			echo json_encode($response);
-			return $pQuery->execute($created_at, $wishes);
+				$response = view('thanks');
+				echo json_encode($response);
+				return $pQuery->execute($created_at, $wishes);
+			} catch (\Exception $e) {
+				var_dump($e->getMessage());
+			}
 		}
 	}
 
